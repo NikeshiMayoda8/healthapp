@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
+import doctor1 from '../assets/doctor3.jpg';
+import doctor2 from '../assets/doctor2.jpg';
+import doctor3 from '../assets/doctor_1.jpg';
+import doctor4 from '../assets/doctor4.jpg';
+import doctor5 from '../assets/doctor5.jpg';
 
 function Doctors() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const doctors = [
-        { name: 'Dr. John Smith', specialty: 'Cardiology', image: 'path/to/doctor1.jpg' },
-        { name: 'Dr. Jane Doe', specialty: 'Orthopedics', image: 'path/to/doctor2.jpg' },
-        { name: 'Dr. Emily Davis', specialty: 'Pediatrics', image: 'path/to/doctor3.jpg' },
-        { name: 'Dr. Michael Brown', specialty: 'Dermatology', image: 'path/to/doctor4.jpg' },
-        { name: 'Dr. Sarah Wilson', specialty: 'Gynecology', image: 'path/to/doctor5.jpg' }
+        { name: 'Dr. John Smith', specialty: 'Cardiology', image: doctor1 },
+        { name: 'Dr. Jane Doe', specialty: 'Orthopedics', image: doctor2 },
+        { name: 'Dr. Emily Davis', specialty: 'Pediatrics', image: doctor3 },
+        { name: 'Dr. Michael Brown', specialty: 'Dermatology', image: doctor4 },
+        { name: 'Dr. Sarah Wilson', specialty: 'Gynecology', image: doctor5}
     ];
 
     const maxIndex = Math.ceil(doctors.length / 3) - 1;

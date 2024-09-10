@@ -13,7 +13,7 @@ body {
 
 /* Header and Navbar styles */
 header {
-  background-color: #007bff; /* Blue background for the header */
+  background-color: #050C9C; /* Blue background for the header */
   padding: 15px 20px;
 }
 
@@ -221,7 +221,7 @@ nav {
 /* Container and Section Styling */
 .services-section {
   padding: 40px 20px;
-  background-color: #e0f7fa; /* Light background color */
+  background-color: #5AB2FF; /* Light background color */
 }
 
 .container {
@@ -379,7 +379,7 @@ h2 {
 
 /* Doctors Section */
 .doctors-section {
-  background-color: #f4f4f4; /* Light background color */
+  background-color: #5AB2FF; /* Light background color */
   padding: 40px 20px;
 }
 
@@ -459,6 +459,465 @@ h2 {
       width: 30px;
       height: 30px;
       font-size: 16px;
+  }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #fff; /* Light background color */
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.testimonials-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonials-list {
+  display: flex;
+  width: calc(200%); /* Double the width to accommodate the repeated testimonials */
+  animation: scroll-left 30s linear infinite;
+}
+
+.testimonial-card {
+  background: #5AB2FF;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 10px;
+  flex: 0 0 auto;
+  text-align: center;
+  min-width: 300px; /* Adjust the width of the cards */
+}
+
+.feedback {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .testimonial-card {
+      padding: 15px;
+      min-width: 250px; /* Adjust card width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card {
+      padding: 10px;
+      min-width: 200px; /* Further adjustment for very small screens */
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #050C9C; /* Footer background color */
+  color: #fff; /* Text color */
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-links, .footer-contact, .footer-social {
+  flex: 1;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #d4d4d4; /* Slightly lighter color on hover */
+}
+
+.footer-contact p {
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #d4d4d4; /* Slightly lighter color on hover */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-logo {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .footer-links, .footer-contact, .footer-social {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  .footer-social {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .footer-social a {
+      font-size: 14px; /* Slightly smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-logo h1 {
+      font-size: 20px; /* Smaller font size for very small screens */
+  }
+
+  .footer-links a, .footer-contact p, .footer-social a {
+      font-size: 14px; /* Adjust font size for readability */
+  }
+}
+
+/* General styles for the login container */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  padding: 20px;
+}
+
+/* Style the login form */
+.login-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  max-width: 800px; /* Max width for the form container */
+  width: 100%;
+}
+
+/* Style for the image inside the form */
+.login-form img {
+  width: 50%; /* Adjust based on how much space you want the image to take */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Style the form content */
+.form-content {
+  flex: 1;
+}
+
+/* Style the heading */
+.form-content h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #050C9C; /* Match the footer color */
+}
+
+/* Style the form */
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style form labels */
+.form-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form inputs */
+.form-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Style the submit button */
+.form-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #050C9C; /* Blue background for the button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form-content button:hover {
+  background-color: #003366; /* Darker blue on hover */
+}
+
+/* Error message styling (if needed) */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 0.875rem;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .login-form {
+      flex-direction: column; /* Stack image and form content vertically */
+      align-items: center; /* Center-align items */
+      text-align: center;
+  }
+
+  .login-form img {
+      width: 80%; /* Adjust image width for smaller screens */
+      margin-right: 0; /* Remove margin between image and text */
+      margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .form-content {
+      width: 100%; /* Ensure form content takes full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-content h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .form-content input {
+      padding: 8px; /* Smaller padding for inputs */
+  }
+
+  .form-content button {
+      font-size: 0.875rem; /* Smaller font size for button */
+      padding: 8px; /* Smaller padding for button */
+  }
+}
+
+/* General styles for the signup container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  background-color: #f4f4f4; /* Light background color */
+  padding: 20px;
+}
+
+/* Style the signup form */
+.signup-form {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+  max-width: 800px; /* Max width for the form container */
+  width: 100%;
+}
+
+/* Style for the image inside the form */
+.signup-form img {
+  width: 50%; /* Adjust based on how much space you want the image to take */
+  border-radius: 8px; /* Optional: rounded corners for the image */
+  margin-right: 20px; /* Space between image and text */
+}
+
+/* Style the form content */
+.form-content {
+  flex: 1;
+}
+
+/* Style the heading */
+.form-content h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #050C9C; /* Match the footer color */
+}
+
+/* Style the form */
+.form-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style form labels */
+.form-content label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style form inputs */
+.form-content input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Style the submit button */
+.form-content button {
+  width: 100%;
+  padding: 10px;
+  background-color: #050C9C; /* Blue background for the button */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.form-content button:hover {
+  background-color: #003366; /* Darker blue on hover */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .signup-form {
+      flex-direction: column; /* Stack image and form content vertically */
+      align-items: center; /* Center-align items */
+      text-align: center;
+  }
+
+  .signup-form img {
+      width: 80%; /* Adjust image width for smaller screens */
+      margin-right: 0; /* Remove margin between image and text */
+      margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .form-content {
+      width: 100%; /* Ensure form content takes full width */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-content h2 {
+      font-size: 1.5rem; /* Smaller heading size */
+  }
+
+  .form-content input {
+      padding: 8px; /* Smaller padding for inputs */
+  }
+
+  .form-content button {
+      font-size: 0.875rem; /* Smaller font size for button */
+      padding: 8px; /* Smaller padding for button */
+  }
+}
+
+/* Center the loading animation */
+.pulse-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: semi-transparent background */
+}
+
+/* Style the pulse SVG */
+.pulse-svg {
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
+}
+
+/* Style the pulse circle with animation */
+.pulse-circle {
+  fill: none;
+  stroke: #007bff; /* Primary color */
+  stroke-width: 4;
+  stroke-linecap: round;
+  animation: pulse 1.5s infinite; /* Animation for pulse effect */
+}
+
+/* Keyframes for pulse animation */
+@keyframes pulse {
+  0% {
+      r: 40; /* Initial radius */
+      opacity: 1; /* Initial opacity */
+  }
+  50% {
+      r: 50; /* Radius expands */
+      opacity: 0.5; /* Opacity decreases */
+  }
+  100% {
+      r: 40; /* Radius contracts back */
+      opacity: 1; /* Opacity returns */
   }
 }
 
