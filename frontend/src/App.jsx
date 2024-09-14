@@ -9,7 +9,7 @@ import HeroSection from "./assets/HeroSection";
 import Testimonials from "./assets/Testimonials";
 import Login from './Login'; 
 import Signup from './SignUp';
-import Loading from './Loading'; // Import the Loading component
+import Loading from './Loading'; 
 
 function App() {
     return (
@@ -24,15 +24,13 @@ function AppContent() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Simulate a loading delay
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 1000); // Adjust delay as needed
+        }, 1000); 
 
         return () => clearTimeout(timer);
     }, []);
 
-    // Determine if the current route is the login or signup page
     const showHeaderAndFooter = !['/login', '/signup'].includes(location.pathname);
 
     if (loading) {
@@ -54,7 +52,6 @@ function AppContent() {
                 } />
                 <Route path="/login" element={<Login />} />
                 <Route path="/signup" element={<Signup />} />
-                {/* Add other routes as needed */}
             </Routes>
             {showHeaderAndFooter && <Footer />}
         </>
