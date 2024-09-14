@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import loginImage from './assets/login.jpg'; // Import the image
+import loginImage from './assets/login.jpg'; 
 
 function Login() {
     const [email, setEmail] = useState('');
@@ -7,7 +7,7 @@ function Login() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle login logic here
+   
         console.log('Email:', email);
         console.log('Password:', password);
     };
@@ -15,7 +15,7 @@ function Login() {
     return (
         <div className="login-container">
             <div className="login-form">
-                <img src={loginImage} alt="Login" /> {/* Image inside the form */}
+                <img src={loginImage} alt="Login" /> 
                 <div className="form-content">
                     <h2>Login</h2>
                     <form onSubmit={handleSubmit}>

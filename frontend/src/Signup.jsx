@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import signupImage from './assets/signup2.jpg'; // Import the image
+import signupImage from './assets/signup2.jpg'; 
 
 function Signup() {
     const [email, setEmail] = useState('');
@@ -8,7 +8,7 @@ function Signup() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle signup logic here
+       
         console.log('Email:', email);
         console.log('Password:', password);
         console.log('Confirm Password:', confirmPassword);
@@ -17,7 +17,7 @@ function Signup() {
     return (
         <div className="signup-container">
             <div className="signup-form">
-                <img src={signupImage} alt="Sign Up" /> {/* Image inside the form */}
+                <img src={signupImage} alt="Sign Up" /> 
                 <div className="form-content">
                     <h2>Sign Up</h2>
                     <form onSubmit={handleSubmit}>
